@@ -1,0 +1,97 @@
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local walks = Instance.new("TextButton")
+local noc = Instance.new("TextButton")
+local tp = Instance.new("TextButton")
+local jumpp = Instance.new("TextButton")
+local normalwalks = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+main.Position = UDim2.new(0.7095626, 0, 0.483260572, 0)
+main.Size = UDim2.new(0, 425, 0, 285)
+
+TextLabel.Parent = main
+TextLabel.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+TextLabel.Size = UDim2.new(0, 425, 0, 40)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "scriptas guias testingsas"
+TextLabel.TextColor3 = Color3.fromRGB(191, 191, 191)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+walks.Name = "walks"
+walks.Parent = main
+walks.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+walks.Position = UDim2.new(0, 0, 0.217543855, 0)
+walks.Size = UDim2.new(0, 102, 0, 50)
+walks.Font = Enum.Font.SourceSans
+walks.Text = "speeeedd boiii (50)"
+walks.TextColor3 = Color3.fromRGB(176, 176, 176)
+walks.TextScaled = true
+walks.TextSize = 14.000
+walks.TextWrapped = true
+walks.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+end)
+
+noc.Name = "noc"
+noc.Parent = main
+noc.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+noc.Position = UDim2.new(0.529411793, 0, 0.459649116, 0)
+noc.Size = UDim2.new(0, 200, 0, 50)
+noc.Font = Enum.Font.SourceSans
+noc.Text = "(WIP)"
+noc.TextColor3 = Color3.fromRGB(176, 176, 176)
+noc.TextScaled = true
+noc.TextSize = 14.000
+noc.TextWrapped = true
+
+tp.Name = "tp"
+tp.Parent = main
+tp.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+tp.Position = UDim2.new(0.529411793, 0, 0.217543855, 0)
+tp.Size = UDim2.new(0, 200, 0, 50)
+tp.Font = Enum.Font.SourceSans
+tp.Text = "(WIP)"
+tp.TextColor3 = Color3.fromRGB(176, 176, 176)
+tp.TextScaled = true
+tp.TextSize = 14.000
+tp.TextWrapped = true
+
+jumpp.Name = "jumpp"
+jumpp.Parent = main
+jumpp.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+jumpp.Position = UDim2.new(0, 0, 0.459649116, 0)
+jumpp.Size = UDim2.new(0, 200, 0, 50)
+jumpp.Font = Enum.Font.SourceSans
+jumpp.Text = "(WIP)"
+jumpp.TextColor3 = Color3.fromRGB(176, 176, 176)
+jumpp.TextScaled = true
+jumpp.TextSize = 14.000
+jumpp.TextWrapped = true
+
+normalwalks.Name = "normalwalks"
+normalwalks.Parent = main
+normalwalks.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+normalwalks.Position = UDim2.new(0.239999995, 0, 0.217543855, 0)
+normalwalks.Size = UDim2.new(0, 98, 0, 50)
+normalwalks.Font = Enum.Font.SourceSans
+normalwalks.Text = "Normal Speed"
+normalwalks.TextColor3 = Color3.fromRGB(176, 176, 176)
+normalwalks.TextScaled = true
+normalwalks.TextSize = 14.000
+normalwalks.TextWrapped = true
+normalwalks.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
